@@ -2,7 +2,7 @@ import LinkButton from './LinkButton';
 
 function Footer() {
   return (
-    <div className="mt-2 flex  items-center justify-between p-10  ">
+    <div className="mt-2 flex  items-center justify-between p-10 py-6  ">
       <div className="cursor-default">
         <h1 className="text-xl">Herman Architects Ltd.</h1>
         <p className="w-56 text-xs text-stone-400">
@@ -16,7 +16,7 @@ function Footer() {
           <img
             src="../../media/icons/facebook.svg"
             alt="facebook"
-            className="h-auto w-6 sm:w-8 md:w-12"
+            className="h-auto w-4 sm:w-6 md:w-8"
           />
         </LinkButton>
         <LinkButton to="/contacts">צור-קשר</LinkButton>
