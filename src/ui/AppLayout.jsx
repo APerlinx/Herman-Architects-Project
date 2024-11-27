@@ -1,6 +1,6 @@
 import Header from './Header';
+import Footer from './Footer';
 import Loader from './Loader';
-import CartOverview from '../features/cart/CartOverview';
 import { Outlet, useNavigation } from 'react-router-dom';
 
 function AppLayout() {
@@ -8,18 +8,17 @@ function AppLayout() {
   const isLoading = navigation.state === 'loading';
 
   return (
-    <div className="grid h-screen grid-rows-[auto_1fr_auto]">
+    <div className="grid min-h-screen grid-rows-[auto_1fr_auto]">
       {isLoading && <Loader />}
 
       <Header />
 
-      <div className="overflow-scroll">
-        <main className="mx-auto max-w-3xl">
+      <div className="overflow-x-hidden">
+        <main className="mx-auto">
           <Outlet />
         </main>
       </div>
-
-      <CartOverview />
+      <Footer />
     </div>
   );
 }
