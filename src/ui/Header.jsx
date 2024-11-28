@@ -1,26 +1,34 @@
 import { Link } from 'react-router-dom';
 import LinkButton from './LinkButton';
+import { useState } from 'react';
+import FacebookLink from './FacebookLink';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
   return (
     <header className="fixed top-0 z-50 flex w-full items-center justify-between px-4 py-3 uppercase sm:px-32">
       {/* Logo */}
-      <div>
+      <div className="z-50 mr-8">
         <Link to="/">
           <img
             src="../../media/logo/logo.svg"
             alt="Website logo link to home page"
-            className="h-auto w-28 md:w-40"
+            className="h-auto w-28 md:w-40 lg:w-44" // Stops resizing after lg
+            style={{ maxWidth: '180px' }} // Add explicit max size as a fallback
           />
         </Link>
       </div>
-
-      {/* Navigation Links */}
-      <div className="mr-10 flex items-center font-extralight sm:gap-8 md:text-lg">
+      {/* Desktop Navigation Links */}
+      <div className="mr-10 hidden items-center font-extralight sm:flex sm:gap-8 md:text-lg">
         <LinkButton to="/projects">פרוייקטים</LinkButton>
         <LinkButton to="/about">אודות</LinkButton>
         <LinkButton to="/contact">צור-קשר</LinkButton>
-        <button className="hidden sm:inline-block">
+        <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
@@ -31,6 +39,47 @@ function Header() {
             <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
           </svg>
         </button>
+      </div>
+
+      {/* Mobile Burger Menu */}
+      <button
+        className="z-50 flex flex-col items-center justify-center p-2 focus:outline-none sm:hidden"
+        onClick={toggleMenu}
+      >
+        {/* Two Lines or X */}
+        <div
+          className={`relative  h-0.5 w-6 bg-black transition-all duration-300 ${
+            isMenuOpen ? 'translate-y rotate-45' : ''
+          }`}
+        ></div>
+        <div
+          className={`relative mt-1 h-0.5 w-6 bg-black transition-all duration-300 ${
+            isMenuOpen ? '-translate-y-1.5 -rotate-45' : ''
+          }`}
+        ></div>
+      </button>
+
+      {/* Mobile Dropdown Menu */}
+      <div
+        className={`absolute left-0 top-0 h-screen w-full bg-stone-300 opacity-[0.8] shadow-md transition-all duration-300 sm:hidden ${
+          isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+        } overflow-hidden`}
+      >
+        <nav className="mt-64 flex flex-col items-center gap-4 space-y-8 py-4 text-2xl font-bold">
+          <LinkButton to="/projects" onClick={toggleMenu}>
+            פרוייקטים
+          </LinkButton>
+          <LinkButton to="/about" onClick={toggleMenu}>
+            אודות
+          </LinkButton>
+          <LinkButton to="/contact" onClick={toggleMenu}>
+            צור-קשר
+          </LinkButton>
+          <LinkButton to="/contact" onClick={toggleMenu}>
+            english
+          </LinkButton>
+          <FacebookLink />
+        </nav>
       </div>
     </header>
   );

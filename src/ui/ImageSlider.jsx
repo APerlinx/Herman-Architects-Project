@@ -32,7 +32,7 @@ function ImageSlider({ images, desc }) {
       <div className="absolute bottom-40 left-4 right-4 z-20 flex flex-wrap items-center justify-center sm:bottom-12 sm:left-10 sm:right-44 sm:justify-between">
         {/* Text */}
 
-        <div className="flex cursor-pointer flex-wrap items-center justify-center text-stone-100 sm:ml-24 sm:text-lg ">
+        <div className="flex cursor-pointer flex-wrap items-center justify-center gap-1 text-stone-100 sm:ml-24 sm:flex-col sm:items-end  sm:text-lg">
           <h3
             className="mb-2 text-3xl font-extrabold sm:mb-4 md:text-4xl"
             key={`title-${currentIndex}`}

@@ -1,3 +1,4 @@
+import FacebookLink from './FacebookLink';
 import LinkButton from './LinkButton';
 
 function Footer() {
@@ -11,18 +12,18 @@ function Footer() {
         </p>
       </div>
 
-      <div className="flex flex-col flex-wrap items-center justify-center gap-1 sm:items-center sm:gap-10">
-        <LinkButton to="/">
+      <div className="flex flex-col flex-wrap items-center justify-center gap-1 sm:flex-row sm:items-center sm:gap-10">
+        {/* <LinkButton to="/">
           <img
             src="../../media/icons/facebook.svg"
             alt="facebook"
             className="h-auto w-6 sm:w-6 md:w-8"
           />
-        </LinkButton>
+        </LinkButton> */}
 
-        <LinkButton to="/contacts" className="">
-          צור-קשר
-        </LinkButton>
+        <FacebookLink type="primary" />
+
+        <LinkButton to="/contacts">צור-קשר</LinkButton>
         <LinkButton>English</LinkButton>
       </div>
     </div>
