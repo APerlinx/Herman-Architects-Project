@@ -29,47 +29,55 @@ function ImageSlider({ images, desc }) {
       </div>
 
       {/* Bottom Bar: Text and Navigation */}
-      <div className="absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between sm:bottom-10 sm:left-10 sm:right-10">
+      <div className="absolute bottom-40 left-4 right-4 z-20 flex flex-wrap items-center justify-center sm:bottom-12 sm:left-10 sm:right-44 sm:justify-between">
         {/* Text */}
 
-        <p className="text-sm font-bold text-stone-100 sm:text-lg">
-          {desc[currentIndex]}
-        </p>
+        <div className="flex cursor-pointer flex-wrap items-center justify-center text-stone-100 sm:ml-24 sm:text-lg ">
+          <h3
+            className="mb-2 text-3xl font-extrabold sm:mb-4 md:text-4xl"
+            key={`title-${currentIndex}`}
+          >
+            {desc.titles[currentIndex]}
+          </h3>
+          <p className="text-xl hover:text-yellow-500">
+            {desc.details[currentIndex]}
+          </p>
+        </div>
 
         {/* Navigation Buttons and Index */}
-        <div className="flex items-center gap-2 text-stone-600 sm:gap-4">
+        <div className="mt-2 flex items-center gap-2 text-stone-600 sm:gap-4">
           {/* Previous Button */}
           <button
             onClick={goToPrev}
-            className="flex h-10 w-10 items-center justify-center transition-transform duration-300 hover:scale-110 sm:h-14 sm:w-14"
+            className="flex items-center justify-center transition-transform duration-300 hover:scale-110 sm:h-14 sm:w-14"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              className="fill-stone-100 transition-transform duration-300 hover:scale-110 hover:fill-yellow-500 sm:h-10 sm:w-10"
+              className="h-16 w-16 fill-stone-100 transition-transform duration-300 hover:scale-110 hover:fill-yellow-500 sm:h-10 sm:w-10"
             >
               <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
             </svg>
           </button>
 
           {/* Current Index */}
-          <span className="text-sm text-stone-100 sm:text-xl">
+          <span className="text-lg text-stone-100 sm:text-xl">
             0{currentIndex + 1} / 0{images.length}
           </span>
 
           {/* Next Button */}
           <button
             onClick={goToNext}
-            className="flex h-10 w-10 items-center justify-center transition-transform duration-300 hover:scale-110 sm:h-14 sm:w-14"
+            className="flex items-center justify-center transition-transform duration-300 hover:scale-110 sm:h-14 sm:w-14"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              className="fill-stone-100 transition-transform duration-300 hover:scale-110 hover:fill-yellow-500 sm:h-10 sm:w-10"
+              className="h-16 w-16 fill-stone-100 transition-transform duration-300 hover:scale-110 hover:fill-yellow-500 sm:h-10 sm:w-10"
             >
               <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
             </svg>

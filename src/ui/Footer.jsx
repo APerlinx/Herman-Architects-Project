@@ -11,15 +11,18 @@ function Footer() {
         </p>
       </div>
 
-      <div className="flex items-center gap-10 ">
+      <div className="flex flex-col flex-wrap items-center justify-center gap-1 sm:items-center sm:gap-10">
         <LinkButton to="/">
           <img
             src="../../media/icons/facebook.svg"
             alt="facebook"
-            className="h-auto w-4 sm:w-6 md:w-8"
+            className="h-auto w-6 sm:w-6 md:w-8"
           />
         </LinkButton>
-        <LinkButton to="/contacts">צור-קשר</LinkButton>
+
+        <LinkButton to="/contacts" className="">
+          צור-קשר
+        </LinkButton>
         <LinkButton>English</LinkButton>
       </div>
     </div>

@@ -10,24 +10,31 @@ function Home() {
           'media/bg-images/bg-image2.jpg',
           'media/bg-images/bg-image3.jpg',
         ]}
-        desc={[
-          'בית פרטי למשפחה במושבת כנרת, 4 חדרים, 2 דונם, נבנה ב-2018',
-          'שכונת רימון נבנתה ב2020 בעיר יקנעם, בתים דו משפחתיים עם 4 חדרים וחניה פרטית.',
-          'מלון דירות על שפת הכנרת, נבנה ב2015',
-        ]}
+        desc={{
+          titles: [
+            'תכנון ועיצוב בנייה פרטית',
+            'תכנון ועיצוב שכונות מגורים',
+            'תכנון ועיצוב מלונות',
+          ],
+          details: [
+            'בית פרטי למשפחה במושבת כנרת',
+            'שכונת רימון.',
+            'מלון דירות על שפת הכנרת, נבנה ב2015',
+          ],
+        }}
       />
 
       {/* Content Section */}
       <div className="absolute inset-0 z-10 flex h-full flex-col items-center justify-center px-4 text-center">
-        <h1 className="mb-12 text-sm font-semibold text-stone-100 md:text-5xl">
-          .הרמן אדריכלים
+        {/* <h1 className="mb-12 cursor-default text-sm font-semibold text-stone-100 md:text-5xl">
+          הרמן אדריכלים
           <br />
-          <span className="font-semibold leading-[0.5] text-stone-200 transition-all duration-300 hover:text-yellow-500 md:text-lg">
+          <span className="cursor-pointer font-semibold leading-[0.5] text-stone-200 transition-all duration-300 hover:text-yellow-500 md:text-lg">
             הרמן אדריכלים נוסד ב-1991 על ידי יאיר הרמן. המשרד מתמחה בתכנון
             ועיצוב בנייה פרטית, בנייה רוויה, רבי קומות, שכונות מגורים מסחר
             ומלונאות
           </span>
-        </h1>
+        </h1> */}
       </div>
     </div>
   );
