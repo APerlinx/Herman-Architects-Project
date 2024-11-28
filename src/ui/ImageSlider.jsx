@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 function ImageSlider({ images, desc }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,19 +20,22 @@ function ImageSlider({ images, desc }) {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            alt={`Slide ${index}`}
-            className="h-full w-full flex-shrink-0 object-cover"
-          />
+          <LazyLoadComponent key={index}>
+            <div
+              className="h-full w-full flex-shrink-0 object-cover"
+              style={{
+                backgroundImage: `url(${img})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            ></div>
+          </LazyLoadComponent>
         ))}
       </div>
 
       {/* Bottom Bar: Text and Navigation */}
       <div className="absolute bottom-40 left-4 right-4 z-20 flex flex-wrap items-center justify-center sm:bottom-12 sm:left-10 sm:right-44 sm:justify-between">
         {/* Text */}
-
         <div className="flex cursor-pointer flex-wrap items-center justify-center gap-1 text-stone-100 sm:ml-24 sm:flex-col sm:items-end  sm:text-lg">
           <h3
             className="mb-2 text-3xl font-extrabold sm:mb-4 md:text-4xl"

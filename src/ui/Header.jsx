@@ -1,17 +1,37 @@
 import { Link } from 'react-router-dom';
 import LinkButton from './LinkButton';
-import { useState } from 'react';
 import FacebookLink from './FacebookLink';
+import { useState, useEffect } from 'react';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 z-50 flex w-full items-center justify-between px-4 py-3 uppercase sm:px-32">
+    <header
+      className={`fixed top-0 z-50 flex h-32 w-full items-center justify-between px-4 py-3 uppercase transition-all duration-300 sm:px-32 ${
+        isScrolled
+          ? 'bg-stone-300 bg-opacity-10 shadow-md backdrop-blur-md'
+          : 'bg-transparent'
+      }`}
+    >
       {/* Logo */}
       <div className="z-50 mr-8">
         <Link to="/">
@@ -23,6 +43,7 @@ function Header() {
           />
         </Link>
       </div>
+
       {/* Desktop Navigation Links */}
       <div className="mr-10 hidden items-center font-extralight sm:flex sm:gap-8 md:text-lg">
         <LinkButton to="/projects">פרוייקטים</LinkButton>
