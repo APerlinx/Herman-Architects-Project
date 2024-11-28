@@ -18,8 +18,8 @@ function Header() {
           <img
             src="../../media/logo/logo.svg"
             alt="Website logo link to home page"
-            className="h-auto w-28 md:w-40 lg:w-44" // Stops resizing after lg
-            style={{ maxWidth: '180px' }} // Add explicit max size as a fallback
+            className="h-auto w-28 md:w-40 lg:w-44"
+            style={{ maxWidth: '180px' }}
           />
         </Link>
       </div>
