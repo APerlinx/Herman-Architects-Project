@@ -5,6 +5,7 @@ import Error from './ui/Error';
 
 import AppLayout from './ui/AppLayout';
 import AboutPage from './features/AboutPage/AboutPage';
+import ContactPage from './features/ContactPage/ContactPage';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <AboutPage />,
+      },
+      {
+        path: '/contact',
+        element: <ContactPage />,
       },
     ],
   },

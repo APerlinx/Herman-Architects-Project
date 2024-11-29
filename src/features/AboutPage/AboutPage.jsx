@@ -1,9 +1,22 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css'; // Import blur effect CSS
+import TeamMember from './TeamMember';
 
 function AboutPage() {
-  const name = 'text-lg font-bold';
+  const teamMembers = [
+    {
+      image: '../../media/about-images/man.jpg',
+      name: 'יאיר הרמן',
+      description:
+        'B.Arc .מייסד הרמן אדריכלים, מנהל מקצועי ואדריכל ראשי בהרמן אדריכלים. בוגר תואר בטכניון משנת 1987',
+    },
+    {
+      image: '../../media/about-images/woman.jpg',
+      name: 'אורה הרמן',
+      description:
+        'B.S.c .מנהלת המשרד בוגרת תואר בהנדסה באוניברסיטת ריגה, ליטא. עובדת במשרד משנת 1994',
+    },
+  ];
+
   return (
     <div className="relative mt-32 grid min-h-screen w-screen items-center justify-items-center gap-8 border-b-2 border-stone-300 px-12 pb-12 sm:mt-48">
       {/* About Section */}
@@ -15,37 +28,15 @@ function AboutPage() {
         </p>
       </div>
 
-      {/* Team Member 1 */}
-      <div className="justify-items-center text-center">
-        <LazyLoadImage
-          src="../../media/about-images/man.jpg"
-          alt="יאיר הרמן - מייסד המשרד"
-          effect="blur"
-          className="h-64 w-72 rounded-lg shadow-md"
+      {/* Team Members */}
+      {teamMembers.map((member, index) => (
+        <TeamMember
+          key={index}
+          image={member.image}
+          name={member.name}
+          description={member.description}
         />
-        <h5 className={name}>יאיר הרמן</h5>
-        <p className="leading-relaxed">
-          מייסד הרמן אדריכלים, מנהל מקצועי ואדריכל ראשי בהרמן אדריכלים. בוגר
-          תואר <span dir="ltr">B.Arc</span> בטכניון משנת 1987
-        </p>
-      </div>
-
-      {/* Team Member 2 */}
-      <div className="justify-items-center text-center">
-        <LazyLoadImage
-          src="../../media/about-images/woman.jpg"
-          alt="אורה הרמן - מנהלת המשרד"
-          effect="blur"
-          className="h-64 w-72 rounded-lg shadow-md"
-        />
-        <h5 className={name}>אורה הרמן</h5>
-        <p className="leading-relaxed">
-          מנהלת המשרד בוגרת אוניברסיטת ריגה, ליטא
-        </p>
-        <p>
-          בהנדסה <span dir="ltr">B.S.c</span>
-        </p>
-      </div>
+      ))}
     </div>
   );
 }
