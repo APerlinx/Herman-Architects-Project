@@ -23,6 +23,9 @@ export default {
       animation: {
         'slide-up': 'slide-up 0.5s ease-in-out',
       },
+      screens: {
+        'custom-sm': '846px',
+      },
     },
   },
   plugins: [],

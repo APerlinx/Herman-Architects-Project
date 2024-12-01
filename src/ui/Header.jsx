@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 z-50 flex h-32 w-full items-center justify-between px-4 py-3 uppercase transition-all duration-300 sm:px-32 ${
+      className={`fixed top-0 z-50 flex h-32 w-full items-center justify-between px-4 py-3 uppercase transition-all duration-300 sm:px-28 ${
         isScrolled
           ? 'bg-stone-300 bg-opacity-10 shadow-md backdrop-blur-md'
           : 'bg-transparent'
@@ -45,7 +45,7 @@ function Header() {
       </div>
 
       {/* Desktop Navigation Links */}
-      <div className="mr-10 hidden items-center font-extralight sm:flex sm:gap-8 md:text-lg">
+      <div className=" hidden items-center font-extralight sm:flex sm:gap-8 md:text-lg">
         <LinkButton to="/projects">פרוייקטים</LinkButton>
         <LinkButton to="/about">אודות</LinkButton>
         <LinkButton to="/contact">צור-קשר</LinkButton>

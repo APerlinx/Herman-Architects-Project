@@ -9,10 +9,10 @@ function TeamMember({ image, name, description }) {
         src={image}
         alt={name}
         effect="blur"
-        className="h-64 w-72 rounded-lg shadow-md"
+        className="h-64 w-72 "
       />
-      <h5 className="text-lg font-bold">{name}</h5>
-      <p className="leading-relaxed">{description}</p>
+      <h5 className="text-xl font-bold">{name}</h5>
+      <p className="text-lg leading-relaxed">{description}</p>
     </div>
   );
 }
