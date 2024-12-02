@@ -6,6 +6,7 @@ import Error from './ui/Error';
 import AppLayout from './ui/AppLayout';
 import AboutPage from './features/AboutPage/AboutPage';
 import ContactPage from './features/ContactPage/ContactPage';
+import ProjectsPage from './features/ProjectsPage/ProjectsPage';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <ContactPage />,
+      },
+      {
+        path: '/projects',
+        element: <ProjectsPage />,
       },
     ],
   },

@@ -18,7 +18,8 @@ function ContactPage() {
           <img
             src="../../media/contact-images/house.jpg"
             alt="תמונה של המשרד"
-            className="h-full w-full object-cover "
+            className="h-full w-full object-cover"
+            loading="lazy"
           />
         </div>
       </div>
@@ -48,7 +49,7 @@ function ContactPage() {
             </a>
           </div>
           <div className="justify-items-end">
-            <FacebookLink className={'sm:mt-2'} />
+            <FacebookLink className={'sm:mt-2'} type="primary" />
           </div>
         </div>
         <div className="justify-items-end text-lg font-semibold">

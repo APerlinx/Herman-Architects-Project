@@ -12,7 +12,9 @@ function TeamMember({ image, name, description }) {
         className="h-64 w-72 "
       />
       <h5 className="text-xl font-bold">{name}</h5>
-      <p className="text-lg leading-relaxed">{description}</p>
+      <p className="text-lg leading-relaxed">
+        <span dir="rtl">{description}</span>
+      </p>
     </div>
   );
 }
