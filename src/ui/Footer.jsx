@@ -15,7 +15,7 @@ function Footer() {
       <div className="flex flex-col flex-wrap items-center justify-center gap-1 sm:flex-row sm:items-center sm:gap-10">
         <FacebookLink type="primary" />
 
-        <LinkButton to="/contacts">צור-קשר</LinkButton>
+        <LinkButton to="/contact">צור-קשר</LinkButton>
         <LinkButton>English</LinkButton>
       </div>
     </div>

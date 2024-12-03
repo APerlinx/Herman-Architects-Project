@@ -1,36 +1,48 @@
 import React, { useState } from 'react';
 import GridView from './GridView';
 import ListView from './ListView';
+import FilterSection from './FilterSection';
 
 function ProjectsPage() {
   const [view, setView] = useState('grid');
+  const [filter, setFilter] = useState('all');
+  const [showFilters, setShowFilters] = useState(false);
 
   const projects = [
     {
       image: '../../../media/bg-images/bg-image-lg-e.jpeg',
-      title: 'בית במושב ',
+      title: 'בית במושב',
       place: 'מושבת כנרת',
       year: '2015',
+      type: 'Residential',
     },
     {
       image: '../../../media/bg-images/bg-image.jpg',
-      title: 'בית במושב  ',
+      title: 'בית במושב',
       place: 'מגדל',
       year: '2020',
+      type: 'Residential',
     },
     {
       image: '../../../media/bg-images/bg-image2.jpeg',
       title: 'מלון גומא, ישרוטל',
       place: 'כנרת',
       year: '2019',
+      type: 'Commercial',
     },
     {
       image: '../../../media/bg-images/bg-image3.jpeg',
       title: 'שערי המושבה',
       place: 'ראש פינה',
       year: '2016',
+      type: 'Public',
     },
   ];
+
+  const filteredProjects =
+    filter === 'all'
+      ? projects
+      : projects.filter((project) => project.type === filter);
 
   return (
     <div
@@ -39,19 +51,24 @@ function ProjectsPage() {
     >
       <h2 className="pb-5 text-4xl font-bold">הפרוייקטים שלנו</h2>
 
-      <div className="mb-12 flex items-center justify-end gap-8">
-        <div className="flex items-center sm:text-lg">
-          <span className="font-bold">סוג פרוייקט</span>
+      <div className="mb-8 flex items-center justify-between gap-8">
+        {/* Filter Toggle */}
+        <button
+          onClick={() => setShowFilters(!showFilters)}
+          className="group flex items-center font-bold text-stone-800  hover:text-yellow-500"
+        >
+          סוג פרוייקט
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="40px"
             viewBox="0 -960 960 960"
             width="40px"
-            fill="#EAC452"
+            fill="#000000"
+            className="group-hover:fill-yellow-500"
           >
             <path d="M480-360 280-559.33h400L480-360Z" />
           </svg>
-        </div>
+        </button>
 
         {/* View Toggle */}
         <div className="flex items-center">
@@ -69,7 +86,7 @@ function ProjectsPage() {
               height="24"
               fill="currentColor"
             >
-              <path d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z" />
+              <path d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8H3z" />
             </svg>
           </button>
 
@@ -93,11 +110,18 @@ function ProjectsPage() {
         </div>
       </div>
 
-      {/* Conditional Rendering */}
+      {/* Filter Section */}
+      <FilterSection
+        showFilters={showFilters}
+        filter={filter}
+        setFilter={setFilter}
+      />
+
+      {/* Project Display */}
       {view === 'grid' ? (
-        <GridView projects={projects} />
+        <GridView projects={filteredProjects} />
       ) : (
-        <ListView projects={projects} />
+        <ListView projects={filteredProjects} />
       )}
     </div>
   );

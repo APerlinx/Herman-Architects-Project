@@ -5,7 +5,7 @@ function ListView({ projects }) {
       {projects.map((project, index) => (
         <div
           key={index}
-          className=" grid cursor-pointer grid-cols-[2fr_1fr_1fr] items-center gap-8 border-b border-stone-300 pb-4"
+          className="group grid cursor-pointer grid-cols-[2fr_1fr_1fr] items-center gap-8 border-b border-stone-300 pb-4"
         >
           {/* Image */}
           <div className="flex items-center gap-4">
@@ -15,7 +15,7 @@ function ListView({ projects }) {
               className="hidden h-32 w-48 object-cover custom-sm:inline-block"
             />
 
-            <h3 className="py-1.5 text-xl font-bold text-stone-800 transition-colors duration-300 group-hover:text-yellow-500">
+            <h3 className="py-1.5 text-xl font-bold text-stone-800 transition-colors duration-200 group-hover:text-yellow-500">
               {project.title}
             </h3>
           </div>
