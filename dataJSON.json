@@ -18,7 +18,7 @@
           "project_type": "private-home"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "randome-image14_lmslqw",
@@ -38,7 +38,7 @@
           "project_type": "private-home"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "randome-image11_xmdx5b",
@@ -58,7 +58,7 @@
           "project_type": "private-home"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "randome-image10_alqk1e",
@@ -78,7 +78,7 @@
           "project_type": "private-home"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "randome-image9_lqbklr",
@@ -98,7 +98,7 @@
           "project_type": "private-home"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "randome-image6_in4cv2",
@@ -118,7 +118,7 @@
           "project_type": "residential-building"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "randome-image5_x2mhdw",
@@ -138,7 +138,7 @@
           "project_type": "residential-building"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "randome-image4_rj2vjo",
@@ -158,7 +158,7 @@
           "project_type": "residential-building"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "randome-image2_o7mvdm",
@@ -178,7 +178,7 @@
           "project_type": "residential-building"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "randome-image3_vvbo9f",
@@ -198,7 +198,7 @@
           "project_type": "residential-building"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "randome-image1_qtnpmz",
@@ -218,7 +218,7 @@
           "project_type": "residential-building"
         }
       },
-      "asset_folder": "ProjectsPage/Projects - random"
+      "asset_folder": "ProjectsPage/project-random"
     },
     {
       "public_id": "project9-house-image4_qlld0r",
@@ -233,13 +233,13 @@
           "caption": "פאר שבטבע",
           "description": "Private home",
           "featured": "true",
-          "project_name": "Project  9 - Private-home",
+          "project_name": "project9-private-home",
           "image_type": "Preview",
           "alt": "בית פרטי בצפון עם שילוב של קווים מודרנים ואבני בזלת המקומיים",
           "project_type": "private-home"
         }
       },
-      "asset_folder": "ProjectsPage/Project9 - private-house"
+      "asset_folder": "ProjectsPage/project9"
     },
     {
       "public_id": "project8-house-image3_h132et",
@@ -254,13 +254,13 @@
           "caption": "בזלת",
           "description": "Luxury residential building",
           "featured": "true",
-          "project_name": "Project  8 - Residential-building",
+          "project_name": "project8-residential-building",
           "image_type": "Preview",
           "alt": "בניין ממוגרים במושב ליד הכנרת, נבנה בהשראת הנוף שנושק לבניין מכול כיוון",
           "project_type": "residential-building"
         }
       },
-      "asset_folder": "ProjectsPage/Project8 - Residential"
+      "asset_folder": "ProjectsPage/project8"
     },
     {
       "public_id": "project7-house-image_s2nbl2",
@@ -273,7 +273,7 @@
       "context": {
         "custom": {
           "description": "Private home for 2 families",
-          "project_name": "Project 7 - Private-home",
+          "project_name": "project7-private-home",
           "featured": "true",
           "image_type": "Preview",
           "caption": "דו משפחתי בכפר",
@@ -281,7 +281,7 @@
           "project_type": "private-home"
         }
       },
-      "asset_folder": "ProjectsPage/Project7 - private-house"
+      "asset_folder": "ProjectsPage/project7"
     },
     {
       "public_id": "project6-house-image3_g1aghm",
@@ -295,14 +295,14 @@
         "custom": {
           "caption": "פנינת המושב",
           "featured": "true",
-          "project_name": "Project 6 - Private-Home",
+          "project_name": "project6-private-home",
           "description": "Private home in the village",
           "image_type": "Preview",
           "alt": "בית פרטי ששוכן במושב ארבל שבצפון",
           "project_type": "private-home"
         }
       },
-      "asset_folder": "ProjectsPage/Project6 - private-house"
+      "asset_folder": "ProjectsPage/project6"
     },
     {
       "public_id": "project5-building-image_w5kk0x",
@@ -317,14 +317,14 @@
           "featured": "true",
           "description": "Residential building",
           "location": "Tiberius",
-          "project_name": "Project 5 - Residential-building",
+          "project_name": "project5-residential-building",
           "image_type": "Preview",
           "alt": "בניין דירות בכניסה לטבריה, מתעטף במראה אותנטי לסביבה ובונוס של נוף משגע לכנרת",
           "caption": "דירה עם נוף לאגם",
           "project_type": "residential-building"
         }
       },
-      "asset_folder": "ProjectsPage/Project5 - Residential"
+      "asset_folder": "ProjectsPage/project5"
     },
     {
       "public_id": "project4-house-image_coo2o7",
@@ -339,13 +339,13 @@
           "caption": "בית פרטי בתשוקה מודרנית",
           "description": "Private home",
           "featured": "true",
-          "project_name": "Project  4 - Private-home",
+          "project_name": "project4-private-home",
           "image_type": "Preview",
           "alt": "בית במושבה שמתפאר וומתהדר בקמורם מרשימים מבפנים ומבחוץ",
           "project_type": "private-home"
         }
       },
-      "asset_folder": "ProjectsPage/Project4 - private-house"
+      "asset_folder": "ProjectsPage/project4"
     },
     {
       "public_id": "project3-hotel-image4_bcqon3",
@@ -362,13 +362,13 @@
           "description": "Hotel on the kinneret",
           "featured": "true",
           "image_type": "Preview",
-          "project_name": "Project 3 - hotel",
+          "project_name": "project3-hotel",
           "year": "2015",
           "location": "Kinneret",
           "project_type": "hotel"
         }
       },
-      "asset_folder": "ProjectsPage/Project3 - hotel"
+      "asset_folder": "ProjectsPage/project3"
     },
     {
       "public_id": "project2-mall-image_q7cnpk",
@@ -384,14 +384,14 @@
           "caption": "שערי המושבה",
           "description": "Commercial mall in rosh pina",
           "featured": "true",
-          "project_name": "Project2 - commercial",
+          "project_name": "project2-commercial",
           "location": "rosh-pina",
           "year": "2018",
           "image_type": "Preview",
           "project_type": "commercial"
         }
       },
-      "asset_folder": "ProjectsPage/Project2 - public-mall"
+      "asset_folder": "ProjectsPage/project2"
     },
     {
       "public_id": "project1-hotel-image_zuoiee",
@@ -405,7 +405,7 @@
         "custom": {
           "alt": "גליליי ששוכן בחלקה הצפוני של צפת אל מול העיר העתיקה",
           "caption": "מלון גליליי",
-          "project_name": "Project 1 - Hotel",
+          "project_name": "project1-hotel",
           "location": "Seffad",
           "year": "2002",
           "image_type": "Preview",
@@ -414,8 +414,8 @@
           "project_type": "hotel"
         }
       },
-      "asset_folder": "ProjectsPage/Project 1 - hotel"
+      "asset_folder": "ProjectsPage/project1"
     }
   ],
-  "updated_at": "2024-12-05T13:53:50Z"
+  "updated_at": "2024-12-05T20:55:38Z"
 }

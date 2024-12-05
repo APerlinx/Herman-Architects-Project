@@ -9,6 +9,9 @@ import ContactPage from './features/ContactPage/ContactPage';
 import ProjectsPage, {
   loader as projectLoader,
 } from './features/ProjectsPage/ProjectsPage';
+import ProjectDetails, {
+  loader as projectDetailsLoader,
+} from './features/ProjectsPage/ProjectDetails';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,13 @@ const router = createBrowserRouter([
         path: '/projects',
         element: <ProjectsPage />,
         loader: projectLoader,
+        errorElement: <Error />,
+      },
+      {
+        path: '/projects/:projectName',
+        element: <ProjectDetails />,
+        loader: projectDetailsLoader,
+
         errorElement: <Error />,
       },
     ],
