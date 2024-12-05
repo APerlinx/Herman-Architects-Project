@@ -2,42 +2,46 @@ import React, { useState } from 'react';
 import GridView from './GridView';
 import ListView from './ListView';
 import FilterSection from './FilterSection';
+import { fetchPreviewProjects } from '../../services/apiCloudinary';
+import { useLoaderData } from 'react-router-dom';
 
 function ProjectsPage() {
+  const projects = useLoaderData();
+
   const [view, setView] = useState('grid');
   const [filter, setFilter] = useState('all');
   const [showFilters, setShowFilters] = useState(false);
 
-  const projects = [
-    {
-      image: '../../../media/bg-images/bg-image-lg-e.jpeg',
-      title: 'בית במושב',
-      place: 'מושבת כנרת',
-      year: '2015',
-      type: 'Residential',
-    },
-    {
-      image: '../../../media/bg-images/bg-image.jpg',
-      title: 'בית במושב',
-      place: 'מגדל',
-      year: '2020',
-      type: 'Residential',
-    },
-    {
-      image: '../../../media/bg-images/bg-image2.jpeg',
-      title: 'מלון גומא, ישרוטל',
-      place: 'כנרת',
-      year: '2019',
-      type: 'Commercial',
-    },
-    {
-      image: '../../../media/bg-images/bg-image3.jpeg',
-      title: 'שערי המושבה',
-      place: 'ראש פינה',
-      year: '2016',
-      type: 'Public',
-    },
-  ];
+  // const projects = [
+  //   {
+  //     image: '../../../media/bg-images/bg-image-lg-e.jpeg',
+  //     title: 'בית במושב',
+  //     place: 'מושבת כנרת',
+  //     year: '2015',
+  //     type: 'Residential',
+  //   },
+  //   {
+  //     image: '../../../media/bg-images/bg-image.jpg',
+  //     title: 'בית במושב',
+  //     place: 'מגדל',
+  //     year: '2020',
+  //     type: 'Residential',
+  //   },
+  //   {
+  //     image: '../../../media/bg-images/bg-image2.jpeg',
+  //     title: 'מלון גומא, ישרוטל',
+  //     place: 'כנרת',
+  //     year: '2019',
+  //     type: 'Commercial',
+  //   },
+  //   {
+  //     image: '../../../media/bg-images/bg-image3.jpeg',
+  //     title: 'שערי המושבה',
+  //     place: 'ראש פינה',
+  //     year: '2016',
+  //     type: 'Public',
+  //   },
+  // ];
 
   const filteredProjects =
     filter === 'all'
@@ -128,3 +132,8 @@ function ProjectsPage() {
 }
 
 export default ProjectsPage;
+
+export async function loader() {
+  const projects = await fetchPreviewProjects();
+  return projects;
+}

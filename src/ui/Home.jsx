@@ -7,7 +7,7 @@ function Home() {
       <ImageSlider
         images={[
           'nebfk6i6dczfzyyynzig',
-          'cxg7shz7lv1fkth3h3vv',
+          'photo_2024-12-05_00-53-16_fuktpl',
           'yxoczxv4qh4it7zdozxv',
           'a1afmn2pdnpkyc0j45ev',
         ]}
@@ -31,3 +31,5 @@ function Home() {
 }
 
 export default Home;
+
+// cxg7shz7lv1fkth3h3vv

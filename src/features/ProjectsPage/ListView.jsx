@@ -10,18 +10,18 @@ function ListView({ projects }) {
           {/* Image */}
           <div className="flex items-center gap-4">
             <img
-              src={project.image}
-              alt={project.title}
+              src={project.imageUrl}
+              alt={project.caption}
               className="hidden h-32 w-48 object-cover custom-sm:inline-block"
             />
 
             <h3 className="py-1.5 text-xl font-bold text-stone-800 transition-colors duration-200 group-hover:text-yellow-500">
-              {project.title}
+              {project.caption}
             </h3>
           </div>
 
           {/* Year and Place */}
-          <p className={textDesign}>{project.place}</p>
+          <p className={textDesign}>{project.location}</p>
           <p className={textDesign}> הושלם ב- {project.year}</p>
         </div>
       ))}

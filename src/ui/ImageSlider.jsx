@@ -43,7 +43,7 @@ function ImageSlider({ images, desc }) {
               {/* Blur Effect */}
               <AdvancedImage
                 cldImg={cloudinaryImg}
-                className="h-full w-full object-cover "
+                className="h-full w-full object-fill "
               />
             </div>
           );
