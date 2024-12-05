@@ -29,6 +29,7 @@ export async function fetchPreviewProjects() {
         year: resource.context?.custom?.year || 'Unknown Year',
         location: resource.context?.custom?.location || '',
         isLast: resource.context?.custom?.last === 'true',
+        projectType: resource.context?.custom?.project_type || 'general', // Correct key name
       }))
       .sort((a, b) => {
         if (a.isLast && !b.isLast) return 1;

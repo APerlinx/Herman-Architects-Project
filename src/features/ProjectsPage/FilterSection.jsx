@@ -5,9 +5,10 @@ function FilterSection({ showFilters, filter, setFilter }) {
 
   const filters = [
     { value: 'all', label: 'הכל' },
-    { value: 'Residential', label: 'מגורים' },
-    { value: 'Commercial', label: 'מסחרי' },
-    { value: 'Public', label: 'ציבורי' },
+    { value: 'hotel', label: 'מלונות' },
+    { value: 'private-home', label: 'בתים פרטיים' },
+    { value: 'residential-building', label: 'בנייני מגורים' },
+    { value: 'commercial', label: 'מסחרי' },
   ];
 
   return (
@@ -23,8 +24,8 @@ function FilterSection({ showFilters, filter, setFilter }) {
             onClick={() => setFilter(item.value)}
             className={`${buttonStyle} ${
               filter === item.value
-                ? ' text-yellow-500'
-                : 'border-stone-300 text-stone-800'
+                ? 'border-b-2 border-yellow-500 text-yellow-500'
+                : 'text-stone-800'
             }`}
           >
             {item.label}

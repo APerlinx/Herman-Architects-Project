@@ -14,7 +14,8 @@
           "image_type": "Preview",
           "project_name": "Project - Solo",
           "last": "true",
-          "caption": "בית פרטי"
+          "caption": "בית פרטי",
+          "project_type": "private-home"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -31,9 +32,10 @@
         "custom": {
           "featured": "true",
           "image_type": "Preview",
+          "project_name": "Project - Solo",
           "last": "true",
           "caption": "בית פרטי",
-          "project_name": "Project - Solo"
+          "project_type": "private-home"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -52,7 +54,8 @@
           "image_type": "Preview",
           "project_name": "Project - Solo",
           "last": "true",
-          "caption": "בית פרטי"
+          "caption": "בית פרטי",
+          "project_type": "private-home"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -71,7 +74,8 @@
           "image_type": "Preview",
           "project_name": "Project - Solo",
           "last": "true",
-          "caption": "בית פרטי"
+          "caption": "בית פרטי",
+          "project_type": "private-home"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -90,7 +94,8 @@
           "image_type": "Preview",
           "project_name": "Project - Solo",
           "last": "true",
-          "caption": "וילה פרטית"
+          "caption": "וילה פרטית",
+          "project_type": "private-home"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -109,7 +114,8 @@
           "image_type": "Preview",
           "project_name": "Project - Solo",
           "last": "true",
-          "caption": "בניין מגורים"
+          "caption": "בניין מגורים",
+          "project_type": "residential-building"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -128,7 +134,8 @@
           "image_type": "Preview",
           "project_name": "Project - Solo",
           "last": "true",
-          "caption": "בניין מגורים"
+          "caption": "בניין מגורים",
+          "project_type": "residential-building"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -147,7 +154,8 @@
           "image_type": "Preview",
           "project_name": "Project - Solo",
           "last": "true",
-          "caption": "בניין מגורים"
+          "caption": "בניין מגורים",
+          "project_type": "residential-building"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -166,7 +174,8 @@
           "image_type": "Preview",
           "project_name": "Project - Solo",
           "last": "true",
-          "caption": "בניין מגורים"
+          "caption": "בניין מגורים",
+          "project_type": "residential-building"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -185,7 +194,8 @@
           "image_type": "Preview",
           "project_name": "Project - Solo",
           "last": "true",
-          "caption": "בניין מגורים"
+          "caption": "בניין מגורים",
+          "project_type": "residential-building"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -204,7 +214,8 @@
           "image_type": "Preview",
           "project_name": "Project - Solo",
           "last": "true",
-          "caption": "בניין מגורים"
+          "caption": "בניין מגורים",
+          "project_type": "residential-building"
         }
       },
       "asset_folder": "ProjectsPage/Projects - random"
@@ -222,9 +233,10 @@
           "caption": "פאר שבטבע",
           "description": "Private home",
           "featured": "true",
+          "project_name": "Project  9 - Private-home",
           "image_type": "Preview",
           "alt": "בית פרטי בצפון עם שילוב של קווים מודרנים ואבני בזלת המקומיים",
-          "project_name": "Project  9 - Private-home"
+          "project_type": "private-home"
         }
       },
       "asset_folder": "ProjectsPage/Project9 - private-house"
@@ -244,7 +256,8 @@
           "featured": "true",
           "project_name": "Project  8 - Residential-building",
           "image_type": "Preview",
-          "alt": "בניין ממוגרים במושב ליד הכנרת, נבנה בהשראת הנוף שנושק לבניין מכול כיוון"
+          "alt": "בניין ממוגרים במושב ליד הכנרת, נבנה בהשראת הנוף שנושק לבניין מכול כיוון",
+          "project_type": "residential-building"
         }
       },
       "asset_folder": "ProjectsPage/Project8 - Residential"
@@ -264,7 +277,8 @@
           "featured": "true",
           "image_type": "Preview",
           "caption": "דו משפחתי בכפר",
-          "alt": "שני בתים עבור שתי משפחות שרוצות לחלוק מעבר לעיצוב המודרני"
+          "alt": "שני בתים עבור שתי משפחות שרוצות לחלוק מעבר לעיצוב המודרני",
+          "project_type": "private-home"
         }
       },
       "asset_folder": "ProjectsPage/Project7 - private-house"
@@ -284,7 +298,8 @@
           "project_name": "Project 6 - Private-Home",
           "description": "Private home in the village",
           "image_type": "Preview",
-          "alt": "בית פרטי ששוכן במושב ארבל שבצפון"
+          "alt": "בית פרטי ששוכן במושב ארבל שבצפון",
+          "project_type": "private-home"
         }
       },
       "asset_folder": "ProjectsPage/Project6 - private-house"
@@ -305,7 +320,8 @@
           "project_name": "Project 5 - Residential-building",
           "image_type": "Preview",
           "alt": "בניין דירות בכניסה לטבריה, מתעטף במראה אותנטי לסביבה ובונוס של נוף משגע לכנרת",
-          "caption": "דירה עם נוף לאגם"
+          "caption": "דירה עם נוף לאגם",
+          "project_type": "residential-building"
         }
       },
       "asset_folder": "ProjectsPage/Project5 - Residential"
@@ -325,7 +341,8 @@
           "featured": "true",
           "project_name": "Project  4 - Private-home",
           "image_type": "Preview",
-          "alt": "בית במושבה שמתפאר וומתהדר בקמורם מרשימים מבפנים ומבחוץ"
+          "alt": "בית במושבה שמתפאר וומתהדר בקמורם מרשימים מבפנים ומבחוץ",
+          "project_type": "private-home"
         }
       },
       "asset_folder": "ProjectsPage/Project4 - private-house"
@@ -347,7 +364,8 @@
           "image_type": "Preview",
           "project_name": "Project 3 - hotel",
           "year": "2015",
-          "location": "Kinneret"
+          "location": "Kinneret",
+          "project_type": "hotel"
         }
       },
       "asset_folder": "ProjectsPage/Project3 - hotel"
@@ -369,7 +387,8 @@
           "project_name": "Project2 - commercial",
           "location": "rosh-pina",
           "year": "2018",
-          "image_type": "Preview"
+          "image_type": "Preview",
+          "project_type": "commercial"
         }
       },
       "asset_folder": "ProjectsPage/Project2 - public-mall"
@@ -391,11 +410,12 @@
           "year": "2002",
           "image_type": "Preview",
           "description": "Hotel in seffad",
-          "featured": "true"
+          "featured": "true",
+          "project_type": "hotel"
         }
       },
       "asset_folder": "ProjectsPage/Project 1 - hotel"
     }
   ],
-  "updated_at": "2024-12-05T13:02:29Z"
+  "updated_at": "2024-12-05T13:53:50Z"
 }

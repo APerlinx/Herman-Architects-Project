@@ -12,41 +12,10 @@ function ProjectsPage() {
   const [filter, setFilter] = useState('all');
   const [showFilters, setShowFilters] = useState(false);
 
-  // const projects = [
-  //   {
-  //     image: '../../../media/bg-images/bg-image-lg-e.jpeg',
-  //     title: 'בית במושב',
-  //     place: 'מושבת כנרת',
-  //     year: '2015',
-  //     type: 'Residential',
-  //   },
-  //   {
-  //     image: '../../../media/bg-images/bg-image.jpg',
-  //     title: 'בית במושב',
-  //     place: 'מגדל',
-  //     year: '2020',
-  //     type: 'Residential',
-  //   },
-  //   {
-  //     image: '../../../media/bg-images/bg-image2.jpeg',
-  //     title: 'מלון גומא, ישרוטל',
-  //     place: 'כנרת',
-  //     year: '2019',
-  //     type: 'Commercial',
-  //   },
-  //   {
-  //     image: '../../../media/bg-images/bg-image3.jpeg',
-  //     title: 'שערי המושבה',
-  //     place: 'ראש פינה',
-  //     year: '2016',
-  //     type: 'Public',
-  //   },
-  // ];
-
   const filteredProjects =
     filter === 'all'
       ? projects
-      : projects.filter((project) => project.type === filter);
+      : projects.filter((project) => project.projectType === filter);
 
   return (
     <div
