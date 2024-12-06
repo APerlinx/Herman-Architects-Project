@@ -6,8 +6,8 @@ function Home() {
       {/* Image Slider */}
       <ImageSlider
         images={[
-          'nebfk6i6dczfzyyynzig',
-          'photo_2024-12-05_00-53-16_fuktpl',
+          'ImageSlider/md17osbbqewc2glbfwea',
+          'ImageSlider/jjuvb2dlyp8ssmzbwgsp',
           'yxoczxv4qh4it7zdozxv',
           'a1afmn2pdnpkyc0j45ev',
         ]}
@@ -20,16 +20,15 @@ function Home() {
           ],
           details: [
             'בית פרטי למשפחה במושבת כנרת',
-            'מלון דירות על שפת הכנרת, נבנה ב2015',
-            'שערי המושבה, ראש פינה',
-            'שכונת רימון, יקנעם',
+            'מלון על שפת הכנרת',
+            'שערי המושבה',
+            'שכונת רימון',
           ],
         }}
+        s
       />
     </div>
   );
 }
 
 export default Home;
-
-// cxg7shz7lv1fkth3h3vv

@@ -7,10 +7,9 @@ import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
 function ImageSlider({ images, desc }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Initialize Cloudinary instance
   const cld = new Cloudinary({
     cloud: {
-      cloudName: 'dayojijed', // Replace with your Cloudinary cloud name
+      cloudName: 'dayojijed',
     },
   });
 
@@ -43,7 +42,7 @@ function ImageSlider({ images, desc }) {
               {/* Blur Effect */}
               <AdvancedImage
                 cldImg={cloudinaryImg}
-                className="h-full w-full object-fill "
+                className="h-full w-full object-cover sm:object-fill"
               />
             </div>
           );

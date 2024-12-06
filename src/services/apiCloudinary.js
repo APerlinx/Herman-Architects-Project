@@ -27,17 +27,15 @@ export async function fetchPreviewProjects() {
           resource.context?.custom?.project_name || 'Unknown Project',
         caption: resource.context?.custom?.caption || 'Untitled Project',
         description: resource.context?.custom?.description || '',
-        year: resource.context?.custom?.year || 'Unknown Year',
+        year: resource.context?.custom?.year || '-',
         location: resource.context?.custom?.location || '',
         isLast: resource.context?.custom?.last === 'true',
         projectType: resource.context?.custom?.project_type || 'general',
       }))
       .sort((a, b) => {
-        // Sort by `isLast`
         if (a.isLast && !b.isLast) return 1;
         if (!a.isLast && b.isLast) return -1;
 
-        // Sort by project number extracted from `projectName`
         const projectNumberA = parseInt(
           a.projectName.match(/project(\d+)/i)?.[1] || 0,
           10
@@ -86,7 +84,7 @@ export async function fetchSingleProject(projectName) {
       alt: resource.context?.custom?.alt || '', // Add the alt property
       description: resource.context?.custom?.description || '',
       location: resource.context?.custom?.location || '',
-      year: resource.context?.custom?.year || '',
+      year: resource.context?.custom?.year || '-',
       projectType: resource.context?.custom?.project_type || 'general',
       projectTypeHEB: resource.context?.custom?.project_typeHEB || '-',
       locationHEB: resource.context?.custom?.locationHEB || '-',

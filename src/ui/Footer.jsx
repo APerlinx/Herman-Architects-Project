@@ -16,7 +16,7 @@ function Footer() {
         <FacebookLink type="primary" />
 
         <LinkButton to="/contact">צור-קשר</LinkButton>
-        <LinkButton>English</LinkButton>
+        <LinkButton>הצהרת נגישות</LinkButton>
       </div>
     </div>
   );

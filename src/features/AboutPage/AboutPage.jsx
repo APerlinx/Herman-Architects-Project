@@ -4,13 +4,13 @@ import TeamMember from './TeamMember';
 function AboutPage() {
   const teamMembers = [
     {
-      image: '../../media/about-images/man.jpg',
+      image: '../../media/about-images/man.jpeg',
       name: 'יאיר הרמן',
       description:
         ' מייסד הרמן אדריכלים, מנהל מקצועי ואדריכל ראשי בהרמן אדריכלים. בוגר תואר B.Arc  בטכניון משנת 1987',
     },
     {
-      image: '../../media/about-images/woman.jpg',
+      image: '../../media/about-images/woman.jpeg',
       name: 'אורה הרמן',
       description:
         'מנהלת המשרד בוגרת תואר B.S.c  בהנדסה באוניברסיטת ריגה, ליטא. עובדת במשרד משנת 1994',

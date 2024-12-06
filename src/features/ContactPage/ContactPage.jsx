@@ -3,7 +3,7 @@ import FacebookLink from '../../ui/FacebookLink';
 function ContactPage() {
   return (
     <div
-      className=" relative mt-32 grid min-h-screen w-screen grid-cols-1 gap-8 border-b-2 border-stone-300 pb-12 sm:mt-48 sm:px-32"
+      className="relative mt-32 grid min-h-screen w-screen grid-cols-1 gap-8 border-b-2 border-stone-300 pb-12 sm:mt-48 sm:px-32"
       style={{
         gridTemplateRows: 'auto 300px',
       }}

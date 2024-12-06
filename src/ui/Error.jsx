@@ -3,10 +3,9 @@ import LinkButton from './LinkButton';
 
 function Error() {
   const error = useRouteError();
-  console.log(error);
 
   return (
-    <div>
+    <div className="relative mt-32 min-h-screen w-screen gap-8 border-b-2 border-stone-300 pb-12 sm:mt-48 sm:px-32">
       <h1>Something went wrong 😢</h1>
       <p>{error.data || error.message}</p>
 

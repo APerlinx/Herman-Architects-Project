@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 
-function LinkButton({ children, to }) {
+function LinkButton({ children, to, onClick }) {
   const navigate = useNavigate();
   const className =
     ' hover:text-yellow-500 cursor-pointer transition-all duration-200 text-black';
@@ -13,7 +13,7 @@ function LinkButton({ children, to }) {
     );
 
   return (
-    <Link to={to} className={className}>
+    <Link to={to} className={className} onClick={onClick}>
       {children}
     </Link>
   );

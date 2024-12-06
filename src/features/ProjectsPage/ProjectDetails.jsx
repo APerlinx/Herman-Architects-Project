@@ -84,7 +84,9 @@ function ProjectDetails() {
               </p>
             </div>
           )}
-          <span className="font-semibold sm:text-lg">עוד פרוייקטים</span>
+          <span className="text-sm font-semibold sm:text-lg">
+            עוד פרוייקטים
+          </span>
           {nextProject && nextProject !== 'none' && (
             <div
               className="cursor-pointer text-center "
