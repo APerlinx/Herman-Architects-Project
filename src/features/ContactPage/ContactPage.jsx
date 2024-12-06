@@ -16,7 +16,7 @@ function ContactPage() {
             aria-hidden="true"
           ></div>
           <img
-            src="../../media/contact-images/house.jpg"
+            src="https://res.cloudinary.com/dayojijed/image/upload/v1733499391/randome-image13_qbacgq.jpg"
             alt="תמונה של המשרד"
             className="h-full w-full object-cover"
             loading="lazy"

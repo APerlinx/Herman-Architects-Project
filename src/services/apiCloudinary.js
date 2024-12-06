@@ -1,5 +1,5 @@
-import dataJSON from '../../dataJSON.json';
-import dataAllJSON from '../../dataAllJSON.json';
+import dataJSON from '../../data/dataJSON.json';
+import dataAllJSON from '../../data/dataAllJSON.json';
 
 const CLOUD_NAME = 'dayojijed';
 const API_BASE_URL = `https://res.cloudinary.com/${CLOUD_NAME}/image/list`;
