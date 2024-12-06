@@ -1,5 +1,5 @@
 node_modules
-
+dist
 # git add .
 # git commit -m "Add new feature X"
 # git push
