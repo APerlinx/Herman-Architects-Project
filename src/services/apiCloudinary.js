@@ -33,9 +33,21 @@ export async function fetchPreviewProjects() {
         projectType: resource.context?.custom?.project_type || 'general',
       }))
       .sort((a, b) => {
+        // Sort by `isLast`
         if (a.isLast && !b.isLast) return 1;
         if (!a.isLast && b.isLast) return -1;
-        return 0;
+
+        // Sort by project number extracted from `projectName`
+        const projectNumberA = parseInt(
+          a.projectName.match(/project(\d+)/i)?.[1] || 0,
+          10
+        );
+        const projectNumberB = parseInt(
+          b.projectName.match(/project(\d+)/i)?.[1] || 0,
+          10
+        );
+
+        return projectNumberA - projectNumberB;
       });
   } catch (error) {
     console.error('Error fetching preview projects:', error);
@@ -78,6 +90,8 @@ export async function fetchSingleProject(projectName) {
       projectType: resource.context?.custom?.project_type || 'general',
       projectTypeHEB: resource.context?.custom?.project_typeHEB || '-',
       locationHEB: resource.context?.custom?.locationHEB || '-',
+      nextProject: resource.context.custom?.next_project || '',
+      prevProject: resource.context.custom?.prev_project || '',
     }));
   } catch (error) {
     console.error(`Error fetching data for ${projectName}:`, error);
