@@ -36,7 +36,7 @@ function Header() {
       <div className="z-50 mr-8">
         <Link to="/">
           <img
-            src="../../media/logo/logo.svg"
+            src="https://res.cloudinary.com/dayojijed/image/upload/v1733499161/logo_kmyo1d.svg"
             alt="Website logo link to home page"
             className="h-auto w-28 md:w-40 lg:w-44"
             style={{ maxWidth: '180px' }}

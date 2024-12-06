@@ -4,13 +4,15 @@ import TeamMember from './TeamMember';
 function AboutPage() {
   const teamMembers = [
     {
-      image: '../../media/about-images/man.jpeg',
+      image:
+        'https://res.cloudinary.com/dayojijed/image/upload/v1733482274/AboutPage-image/nvse61npnkwg4yqdc0l7.jpg',
       name: 'יאיר הרמן',
       description:
         ' מייסד הרמן אדריכלים, מנהל מקצועי ואדריכל ראשי בהרמן אדריכלים. בוגר תואר B.Arc  בטכניון משנת 1987',
     },
     {
-      image: '../../media/about-images/woman.jpeg',
+      image:
+        'https://res.cloudinary.com/dayojijed/image/upload/v1733482274/AboutPage-image/bqjeigaae8r2kndstd6p.jpg',
       name: 'אורה הרמן',
       description:
         'מנהלת המשרד בוגרת תואר B.S.c  בהנדסה באוניברסיטת ריגה, ליטא. עובדת במשרד משנת 1994',
@@ -28,8 +30,8 @@ function AboutPage() {
             aria-hidden="true"
           ></div>
           <img
-            src="../../media/about-images/house-about.jpg"
-            alt="תמונה של המשרד"
+            src="https://res.cloudinary.com/dayojijed/image/upload/v1733499316/house-about_cbph0p.jpg"
+            alt="פנים בית פרטי"
             className="h-full w-full object-cover"
             loading="lazy"
           />
